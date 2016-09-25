@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function MiCoche(valorMarca, valorModelo) {
+			//DEFINICIÓN DE PROPIEDADES
+
+			this.marca=valorMarca;
+			this.modelo=valorModelo;
+			this.color="Negro";
+		}
+		//CREACION DE UNA INSTANCIA
+		var unCoche= new MiCoche("Fiat", "Punto");
+		alert(unCoche.color);
+		//ELIMINACIÓN DE UNA PROPIEDAD
+		delete unCoche.color;
+		alert(unCoche.color) //MOSTRARÍA UNDEFINIED PORQUE LA PROPIEDAD NO EXISTE;
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
