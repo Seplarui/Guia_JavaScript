@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script type="text/javascript">
+		//OBJETO DEFINIDO CON LLAVES
+		var unCoche= {acelerar: function(velocidad) {
+			alert("acelrando hasta " + velocidad);
+		}};
+		unCoche.acelerar(90);
+
+		//OBJETO DEFINIDO CON FUNCTION
+
+		function miCoche() {
+			//DEFINICIÓN DE MÉTODOS
+			this.acelerar=function(velocidad) {
+				alert("acelerando hasta "+ velocidad); };
+			}
+			var unCoche = new miCoche();
+			uncoche.acelerar(100);
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
