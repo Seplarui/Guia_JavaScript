@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	//VARIABLE GLOBAL
+	var numero=5;
+
+	//DECLARACIÓN FUNCIÓN VARIABLE LOCAL
+
+	function darNumero() {
+		var numero=10;
+		return numero;
+	}
+
+	//USO DE VARIABLES CON EL MISMO NOMBRE
+
+	alert(numero); //VARIABLE GLOBAL: 5
+	alert(darNumero()); // VARIABLE LOCAL: 10
+	alert(numero); // VARIABLE GLOBAL: 5
+
+</script>
+	
+</body>
+</html>

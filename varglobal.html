@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var resultado;
+		function acelerar(velocidad) {
+			if (velocidad<120) {
+				resultado = velocidad+5;
+			} else {
+				resultado=velocidad;
+			}
+			return resultado;
+		}
+		//LLAMADAS A FUNCION
+
+		alert(acelerar(80));
+		alert(acelerar(130));
+		//USO VARIABLE GLOBAL
+
+		alert(resultado);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

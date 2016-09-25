@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+
+	//DECLARACIÓN DE UNA FUNCIÓN CON UNA VARIABLE LOCAL
+		function acelerar(velocidad) {
+			var resultado;
+			if (velocidad<120) {
+				resultado=velocidad+5;
+			} else {
+				resultado=velocidad;
+			}
+			return resultado;
+		}
+		//LLAMADAS A FUNCIÓN
+		alert(acelerar(90));
+		alert(acelerar(140));
+		//USO DE VARIABLE LOCAL
+		alert(resultado);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
