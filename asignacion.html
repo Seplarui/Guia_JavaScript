@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	function MiCoche(valorMarca, valorModelo, valorColor) {
+		//DEFINICION DE PROPIEDADES
+
+		this.marca=valorMarca;
+		this.modelo=valorModelo;
+		this.color=valorColor;
+	}
+	//DEFINIMOS INSTANCIAS
+
+	var coche1= new MiCoche("Fiat", "Punto", "Rojo");
+	var coche2= new MiCoche("Honda", "Civic", "Azul2");
+	var coche3= new MiCoche("Hyundai", "i30", "Blanco");
+
+	alert(coche1.marca);
+	alert(coche2.marca);
+	alert(coche3.marca);
+</script>
+	
+</body>
+</html>
