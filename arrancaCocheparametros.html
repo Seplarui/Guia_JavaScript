@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        function acelerarCoche(velocidad) {
+            alert("acelrando hasta " + velocidad);
+        }
+
+        //Objeto definido con llaves
+        var unCoche = { acelerar: acelerarCoche };
+        //Objeto definido con funcion
+        function MiCoche() {
+            //Definición de métodos
+            this.acelerar = acelerarCoche;
+        }
+
+    </script>
+
+</body>
+</html>
