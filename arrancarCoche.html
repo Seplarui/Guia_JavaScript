@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //Definición de función
+
+        function arrancarCoche() {
+            alert("Brummm");
+        }
+
+        //OBJETO DEFINIDO CON LLAVES
+
+        var unCoche = { arrancar: arrancarCoche };
+        unCoche.arrancar();
+        //OBJETO DEFINIDO CON FUNCTION
+
+        function MiCoche() {
+
+            //Definición de métodos
+
+            this.arrancar = arrancarCoche;
+
+        }
+
+        var unCoche = new MiCoche();
+        unCoche.arrancar();
+
+
+
+    </script>
+
+</body>
+</html>

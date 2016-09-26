@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //Definición de la función
+
+        function arrancarCoche() {
+            alert("Brummm");
+            return "Arrancado";
+        }
+
+        //Objeto definido con function
+
+        function MiCoche() {
+            //Definición incorrecta de métodos
+            this.arrancar = arrancarCoche(); //Se muestra "Bruummm"
+        }
+
+        var unCoche = new MiCoche();
+        alert(unCoche.arrancar); //Mostraría arrancando
+        unCoche.arrancar(); //Error arrancar no es un  método
+
+    </script>
+
+</body>
+</html>
