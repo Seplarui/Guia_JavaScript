@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //DECLARACIÓN DE VARIABLES
+
+        var mensaje, miPropiedad, unCoche;
+        //OBJETO DEFINIDO CON FUNCTION
+
+        function MiCoche(marca, modelo, color) {
+            //DEFINICION DE PROPIEDADES
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.arrancar = function () { alert("Brummm"); };
+        }
+
+        //DECLARACIÓN DE LA INSTANCIA
+
+        unCoche = new MiCoche("Fiat", "Punto", "Rojo");
+
+        //DECLARACIÓN DE VARIABLE
+
+        mensaje = "Contenido de \"unCoche\":\n";
+
+        // SENTENCIA FOR-IN
+
+        for (miPropiedad in unCoche) {
+            mensaje += "\t* " + miPropiedad + "\n";
+        }
+
+        //MOSTRAMOS LAS PROPIEDADES
+
+        alert(mensaje);
+
+    </script>
+
+</body>
+</html>
