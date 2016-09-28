@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+
+        //DECLARACIÓN DE VARIABLES
+
+        var mensaje, miPropiedad, unCoche;
+        //OBJETO DEFINIDO CON FUNCTION
+
+        function MiCoche(marca, modelo, color) {
+            //DEFINICION DE PROPIEDADES
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.arrancar = function () { alert("Brummm"); };
+        }
+
+        unCoche = new MiCoche("Fiat", "Punto", "Rojo");
+        mensaje = "Valores en \"unCoche\":\n";
+        for (miPropiedad in unCoche) {
+
+            if (typeof (unCoche[miPropiedad]) == "function") {
+
+                mensaje += "\t* \'" + miPropiedad + "\' es un método.\n";
+                unCoche[miPropiedad]();
+
+
+            } else {
+                mensaje += "\t* \'" + miPropiedad + "\'no es un método. \n";
+            }
+        }
+
+        alert(mensaje);
+    </script>
+
+</body>
+</html>
