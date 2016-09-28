@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //DEFINICIÓN DE FUNCIÓN CON ACCESO A PROPIEDADES
+
+        function mostrarColorCoche() {
+            alert("El color del coche es: " + this.color);
+        }
+        //OBJETO DEFINIDO COMO FUNCIÓN
+
+        function MiCoche(marca, modelo, color) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            //ACCESO A PROPIEDADES DESDE FUNCIÓN DEFINIDA DENTRO
+            this.mostrarMarca = function () {
+                alert("Mi marca es: " + this.marca);
+            };
+            //ACCESO A PROPIEDADES DESDE FUNCIÓN EXISTENTE
+            this.mostrarColor = mostrarColorCoche;
+        }
+
+        var unCoche = new MiCoche("Fiat", "Punto", "Rojo");
+        unCoche.mostrarMarca();
+        unCoche.mostrarColor();
+    </script>
+</body>
+</html>
