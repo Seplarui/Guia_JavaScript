@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+
+        var unCoche, valocidad = 100;
+        function subirVelocidad() {
+            velocidad += 20;
+        }
+
+        function MiCoche(marca, modelo, color) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+
+            this.acelerar = function (velocidad) {
+                alert("acelerando hasta " + velocidad);
+            };
+        }
+        unCoche = new MiCoche("Fiat", "Punto", "Rojo");
+
+        with (unCoche) {
+            alert(marca);
+            acelerar(velocidad);
+            subirVelocidad();
+            acelrar(velocidad);
+        }
+    </script>
+
+</body>
+</html>
