@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        /*12) Desarrollar un programa que muestre la tabla de multiplicar del numero X, hasta el valor Y
+( Ejemplo: para X=1 y=2 mostraría 1 x 1 = 1, 1 x 2=2).*/
+
+        var x = 0;
+        var y = 0;
+        var i=0;
+
+        x = prompt("Tabla de multiplicar del número:");
+        y = prompt("Hasta la cifra");
+      //  alert(y);
+
+        //  alert(x + "x" + y + "=" + x * y);
+
+       for (i=1;i<=y;i++) {
+
+          document.writeln(x + "x" + i + "=" + x * i);
+        }
+
+
+
+    </script>
+
+</body>
+</html>
