@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+
+        // Obtenemos los datos
+        var n = parseInt(prompt("¿Cuantos triangulos quieres leer?"));
+
+        //Inicializamos variables
+        nIso = 0;
+        nEqui = 0;
+        nEsca = 0;
+
+        for (i = 0; i < n; i++) {
+
+            var l = parseInt(prompt("Dime cuantas lados tiene tu triangulo"));
+            // Cambiamos el total de datos
+            if (l == 3) {
+                alert("El triangulo actual es equilatero");
+                nEqui++;
+            }
+            else if (l == 2) {
+                alert("El triangulo actual es isosceles");
+                nIso++;
+            }
+            else if (l == 0) {
+                alert("El triangulo actual es escaleno");
+                nEsca++;
+            }
+            // Mostramos cuantos hay de cada
+            alert("Hay un total de " + nEqui + " Equilateros, " + nIso + " Isosceles, " + nEsca + " Escalenos");
+
+            // Buscamos cual es el menor. En caso de empate, van primero Equilateros, luego Isosceles y finalmente Escalenos
+            if (nEqui <= nIso && nEqui <= nEsca) {
+                alert("El menor numero de triangulos son Equilateros");
+            }
+            else if (nIso <= nEqui && nIso <= nEsca) {
+                alert("El menor numero de triangulos son Isosceles");
+            }
+            else if (nEsca <= nIso && nEsca <= nEqui) {
+                alert("El menor numero de triangulos son Escalenos");
+            }
+
+
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

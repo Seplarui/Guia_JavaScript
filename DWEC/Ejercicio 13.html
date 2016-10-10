@@ -1,0 +1,39 @@
+<html>
+
+<script type="text/javascript">
+
+/*13) Realizar un programa que pida cuantos triángulos leer. De cada triangulo leeremos cuantos
+lados iguales tiene. Cada vez que se lea un triángulo, mostrará los siguientes datos:
+a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados
+iguales), isósceles (dos lados iguales) o escaleno (ningún lado igual).
+b) Cantidad de triángulos de cada tipo.
+c) Tipo de triángulo del que hay menor cantidad.*/
+
+numtr=prompt("Introduce el número de triángulos a leer");
+
+var i=0;
+
+var iguales=0, unoigual=0, dosiguales=0,tresiguales=0;
+
+var equilatero=0, isosceles=0, escaleno=0;
+
+var min=1;
+for(i=0;i<numtr;i++) {
+
+iguales=prompt("Cuantos lados iguales tiene");
+
+if (iguales==0) {
+  escaleno++;
+} else if(iguales==2) {
+  isosceles++;
+} else if(iguales==3) {
+  equilatero++
+}
+
+alert("Hay un total de: " + equilatero + " Equilateros" + isosceles + ", isosceles y " + escaleno + " Escalenos");
+    
+
+}
+</script>
+
+</html>
