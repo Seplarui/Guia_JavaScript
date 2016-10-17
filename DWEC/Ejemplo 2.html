@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //Crea una fecha con la fecha y hora del sistema
+
+        var d = new Date();
+        alert(d.getDay());
+        d.setDate(1);
+        alert(d.getDay());
+        alert(d);
+
+        //Crea una fecha basándose en la cadena de fecha especificada
+
+        d = new Date("October 13, 2014 11:13:00");
+        alert(d);
+
+        //Crea una fecha indicando año, mes, dia, horas, minutos, segundos, milisegundos
+
+        d = new Date(99, 5, 24, 11, 33, 30, 0);
+        alert(d);
+
+        //Crea una fecha indicando año,mes dia.
+
+        d = new Date(99, 5, 24);
+        alert(d);
+
+
+    </script>
+</body>
+</html>
