@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+
+        var DNI = 0;
+        var letras = new Array("T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E");
+        var resto = 0;
+        guarda_letras = new Array(5);
+
+
+        //setInterval(DNI = prompt("Intoduce DNI"), 10000);
+
+        function calculo_letra(DNI) {
+
+
+            while (DNI != "-1") {
+
+                DNI = prompt("Introduce DNI sin letra");
+                resto = DNI % 23;
+                guarda_letras = push(letras[resto]);
+                document.write(guarda_letras);
+                alert(guarda_letras);
+
+            }
+        }
+       calculo_letra();
+        document.writeln(guarda_letras);
+
+        /*setInterval(function () {
+            while (DNI != "-1") {
+
+                DNI = prompt("Introduce DNI sin letra");
+                resto = DNI % 23;
+                guarda_letras = push(letras[resto]);
+
+            }
+
+        }
+            , 15000);
+
+        if (DNI == "-1") {
+            for (var i = 0; i <= guarda_letras.length; i++) {
+
+                document.write(guarda_letras[i]);
+            }
+
+
+        }
+
+        */
+
+        /*setInterval(function () {
+
+
+            while (DNI != "-1") {
+
+               DNI = prompt("Introduce DNI");
+               resto = DNI % 23;
+               guarda_letras = push[letras[resto]];
+
+
+
+           }
+           if (DNI == "-1") {
+
+               for (var i = 0; i <= guarda_letras.length; i++) {
+
+                   document.write(guarda_letras[i]);
+               }
+
+
+           }
+
+
+
+
+       }, 3000);*/
+
+
+
+
+    </script>
+
+</body>
+</html>
