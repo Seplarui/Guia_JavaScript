@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+
+        //Función que valida el formulario y lo envía
+
+        function validarYEnviarFormulario() {
+            //Operaciones de validación
+
+            with (document.formLogin) {
+                if (usuario.value == "") {
+                    usuario.focus();
+                } else if (clave.value == "") {
+                    clave.focus();
+                }
+                else {
+                    submit();
+                }
+            }
+        }
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <h3>Formulario de acceso</h3>
+
+    <form id="formulario1" name="formLogin" action="login.php" method="post">
+
+        Usuario<input type="text" id="entrada1" name="usuario" maxlength="8" /><br />
+        Contraseña<input type="password" id="entrada2" name="clave" /><br />
+        <input type="button" id="boton1" name="botonvalidar" value="Validar y Enviar" onclick="validarYEnviarFormulario();" /> <input type="submit" id="boton2" name="botonEnviar" />
+    </form>
+
+</body>
+</html>
