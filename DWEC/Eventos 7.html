@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+
+        function restaurarImagen() {
+            document.images["flecha"].src="doodle.jpg";
+        }
+
+        function cambiarImagen() {
+            document.images["flecha"].src = "logo_JavaScript.png";
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+    <h3>Mueve el puntero sobre la imagen</h3>
+   <!-- <img id="imagen1" name="flecha" src="F:\OneDrive\LENGUAJES\Seplarui\Imagenes\doodle.jpg" />-->
+
+    <img id="imagen1" name="flecha" src="doodle.jpg" onmouseover="cambiarImagen();" onmouseout="restaurarImagen();" />
+</body>
+</html>
