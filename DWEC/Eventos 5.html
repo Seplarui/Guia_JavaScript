@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+
+        function mostrarTexto(texto) {
+            alert(texto);
+        }
+
+    </script>
+</head>
+<body>
+
+    <h3>Formulario que muestra propiedades</h3>
+
+    <form id="formulario1" name="formMensaje">
+        <input type="button" id="boton1" name="botonid" value="Sumar" onclick="mostrarTexto(2 + 3);" /> <br/>
+        <input type="button" id="boton2" name="botonName" value="Ver nombre formulario" onclick="mostrarTexto('Mi formulario se llama ' + this.form.name);" />
+    </form>
+    
+
+</body>
+</html>
