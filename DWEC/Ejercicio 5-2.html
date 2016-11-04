@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <input id="boton_hola" type="button" value="Comenzar Saludos" onclick="hola_on" />
+    <input id="boton_adios" type="button" value="Parar Saludos" onclick="hola_off" />
+
+
+    <script type="text/javascript">
+
+        /*2) Realizar un programa con dos botones “Comenzar Saludos” y “Parar Saludos”. Al hacer click en
+“Comenzar Saludos”, lance un setInterval que cada 5 segundos muestre un alert con “Hola”. El
+botón “Parar Saludos” parará esa secuencia.*/
+
+        function hola_on() {
+
+            setInterval("alert('Hola');", 5000);
+        }
+
+
+        document.getElementById("boton_hola").onclick = hola_on;
+
+        function hola_off() {
+
+            clearInterval(hola);
+        }
+
+    </script>
+
+
+
+</body>
+</html>
