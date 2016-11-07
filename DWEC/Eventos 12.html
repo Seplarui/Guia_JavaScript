@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+        function mostrarMensaje() {
+            alert("Clic!!");
+        }
+        document.formBotones.botonAntes.onclick = mostrarMensaje;
+    </script>
+</head>
+<body>
+    <h3>Pulsa en los botones</h3>
+    <form id="formulario1" name="formBotones">
+        <input type="button" id="boton1" name="botonAntes" value="Manejador erróneo" />
+        <input type="button" id="boton2" name="botonDespues" value="Manejador válido" />
+    </form>
+
+    <script type="text/javascript">
+        document.formBotones.botonDespues.onclick = mostrarMensaje;
+    </script>
+
+</body>
+</html>
