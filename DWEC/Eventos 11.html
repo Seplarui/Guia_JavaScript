@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+
+        function comprobarMezcla(color) {
+
+            if (color.index == 2) {
+                alert("Muy bien");
+            } else {
+                alert("Lo siento, no es " + color.value + "...Inténtalo de nuevo.");
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <h3>Adivina la mezcla de colores</h3>
+    <form id="formulario1" name="formColores">
+        Rojo+
+        <select id="seleccion1" name="color" onchange="comprobarMezcla(this.Option[this.selectedIndex])">
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarillo">Amarillo</option>
+        </select>
+        =Naranja
+    </form>
+</body>
+</html>
