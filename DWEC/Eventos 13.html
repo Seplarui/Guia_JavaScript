@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+
+        function resalta(elemento) {
+
+            switch (elemento.style.borderColor) {
+                case 'silver':
+                case 'silver silver silver silver':
+                case '#c0c0c0':
+                    elemento.style.borderColor = 'black';
+                    break;
+
+                case 'black':
+                case 'black black black black':
+                case '#000000':
+                    element.style.borderColor = 'silver';
+                    break;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <div style="width:150px;height:60px; border:thin solid silver" onmouseover="restalta(this)" onmouseout="resalta(this)">
+
+        Sección de contenidos...
+    </div>
+
+
+
+</body>
+</html>
