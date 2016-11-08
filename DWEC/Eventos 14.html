@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript">
+        //Función externa
+        function muestraMensaje() {
+            alert('Gracias por pinchar');
+        }
+
+    </script>
+</head>
+<body>
+
+    <input id="pinchable" type="button" value="Pinchame y verás" />
+
+    <script type="text/javascript">
+
+        document.getElementById("pinchable").onclick = muestraMensaje;
+
+    </script>
+
+</body>
+</html>
